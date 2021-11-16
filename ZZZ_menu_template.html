@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Menu</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos_login&register.css" />
+
+    <!--Kit Iconos FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/acd423b58e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Kit Iconos Material Icon-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Asset para efecto Typed-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+
+  <!--  -->
+
+  <body>
+    <!--      HEADER      -->
+    <header>
+      <!-- Label DisCode & Botón NAV Responsivo -->
+      <a href="index.html" class="logo">DisCode</a>
+      <div class="menu-toggle"></div>
+
+      <!-- Menu de navegación -->
+      <nav>
+        <ul>
+          <li><a href="blog.html" class="btn_normal">Visitar Blog</a></li>
+          <li><a href="login.html" class="btn_login">Iniciar Sesión</a></li>
+          <li><a href="register.html" class="btn_register">Regístrarse</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <!--      SCRIPTS      -->
+    <script>
+      var typed = new Typed('.animate', {
+        strings: [
+          "Desarrolles tus habilidades como programador.",
+          "Aprendas de una manera interactiva.",
+          "Emprendas nuevos retos."
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+
+      $(document).ready(function () {
+        $("header nav ul li a").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+  /*    Variables   */
+  :root {
+    --colorContenedorUNO: #3f37c9;
+    --colorContenedorDOS: #4c3eed;
+    --colorContenedorNAV: #4c66e6;
+    --colorContenedorFOOTER: #1b2739;
+    --colorContenedorMenuResponsivo: #0f243586;
+
+    --colorTexto: #ffffff;
+    --colorHipervinculos: #2647f8;
+    --colorHipervinculosMenu: #fd583a;
+
+    /*Paleta de Colores*/
+    --color3049F6: #3049f6;
+    --color3840e0: #3840e0;
+    --color3f37c9: #3f37c9;
+    --color4c3eed: #4c3eed;
+    --color3a0ca3: #3a0ca3;
+    --color2b1a6e: #2b1a6e;
+    --color1b2739: #1b2739;
+    --colorBotones: #4361ee;
+
+    --FontUbuntu: "Ubuntu", sans-serif;
+    --FontSourceSansPro: "Source Sans Pro", sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  /*          HEADER           */
+
+  header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: var(--colorContenedorNAV);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .logo {
+    color: var(--colorTexto);
+    height: 50px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  nav {
+    float: right;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 6px;
+  }
+
+  nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--colorTexto);
+    border-radius: 4px;
+    font-weight: 400;
+  }
+
+  nav ul li a:hover {
+    transition: 0.5s;
+  }
+
+  .btn_normal:hover {
+    background: var(--colorTexto);
+    color: var(--colorBotones);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+
+  .btn_login {
+    box-shadow: inset 0 0 0 3px var(--colorTexto);
+  }
+
+  .btn_register {
+    background: var(--colorTexto);
+    color: var(--colorBotones);
+    padding: 10px 30px;
+  }
+
+  .btn_login:hover {
+    background: var(--colorTexto);
+    color: var(--colorBotones);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+
+  .btn_register:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+
+  @media (max-width: 910px) {
+    .menu-toggle {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color: var(--colorTexto);
+    }
+
+    .menu-toggle:hover {
+      color: var(--colorHipervinculosMenu);
+    }
+
+    .menu-toggle::before {
+      content: "\f0c9";
+      /*\f00d*/
+      font-family: FontAwesome;
+      line-height: 40px;
+    }
+
+    .menu-toggle.active::before {
+      content: "\f00d";
+    }
+
+    .btn_login,
+    .btn_register {
+      box-shadow: none;
+      background: none;
+      color: var(--colorTexto);
+    }
+
+    .btn_register:hover {
+      box-shadow: none;
+      background: var(--colorTexto);
+      color: var(--colorBotones);
+    }
+
+    nav {
+      display: none;
+    }
+
+    nav.active {
+      display: block;
+      width: 100%;
+    }
+
+    nav.active ul {
+      display: block;
+    }
+
+    nav.active ul li a {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 893px) {
+  }
+</style>

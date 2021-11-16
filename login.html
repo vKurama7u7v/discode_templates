@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="css/estilos_login&register.css" />
+
+  <!--Kit Iconos FontAwesome-->
+  <script src="https://kit.fontawesome.com/acd423b58e.js" crossorigin="anonymous"></script>
+
+  <!--Kit Iconos Material Icon-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!--Asset para efecto Typed-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+
+<!--  -->
+
+<body>
+  <!--      HEADER      -->
+  <header>
+    <!-- Label DisCode & Botón NAV Responsivo -->
+    <a href="index.html" class="logo">DisCode</a>
+    <div class="menu-toggle"></div>
+
+    <!-- Menu de navegación -->
+    <nav>
+      <ul>
+        <li><a href="login.html" class="btn_login">Iniciar Sesión</a></li>
+        <li><a href="register.html" class="btn_register">Regístrarse</a></li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+  </header>
+    
+
+  <!--      MAIN      -->
+  <main>
+    <section class="bg_principal">
+        <section class="Contenedor">
+
+          <div class="Contenedor__btnCerrar">
+            <a href="index.html"><span class="material-icons">close</span></a>
+          </div>
+
+          <div class="Grid">
+
+            <div class="Formulario">
+              <div class="Formulario__Titulo">
+                <h1>Iniciar Sesión</h1>
+              </div>
+
+              <div class="Formulario__Opciones">
+                <span>Aún no tienes una cuenta? <a href="login.html">Regístrarse</a></span>
+              </div>
+
+              <form action="" class="Grid__Form">  
+                <div class="form__div" id="Login__Email">
+                  <input type="email" class="form__input" placeholder=" " />
+                  <label for="" class="form__label">Email</label>
+                </div>
+  
+                <div class="form__div" id="Login__Password">
+                  <input type="password" class="form__input" placeholder=" " />
+                  <label for="" class="form__label">Contraseña</label>
+                </div>
+  
+                <div class="Contenedor__boton">
+                  <input type="submit" class="form__boton" value="Iniciar Sesión"/>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="Grid__img">
+              <img
+                src="https://cdn.glitch.com/27131a37-2b0c-4505-85fd-e4cd33d55125%2FRobot%20Mascota%20-%20Iniciar%20Sesio%CC%81n.svg?v=1615403033886"
+                alt=""
+              />
+            </div>
+
+          </div>
+        </section>
+    </section>
+  </main>
+
+  <!--      SCRIPTS      -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".menu-toggle").click(function () {
+        $(".menu-toggle").toggleClass("active");
+        $("nav").toggleClass("active");
+      });
+    });
+
+    $(document).ready(function () {
+      $("header nav ul li a").click(function () {
+        $(".menu-toggle").toggleClass("active");
+        $("nav").toggleClass("active");
+      });
+    });
+  </script>
+</body>
+</html>

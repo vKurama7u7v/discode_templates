@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas Frecuentes</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos_faqs.css" />
+
+    <!--Kit Iconos FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/acd423b58e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Kit Iconos Material Icon-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Kit Iconos Box Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Asset para efecto Typed-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+
+  <!--  -->
+
+  <body>
+    <!--      HEADER      -->
+    <header>
+      <!-- Label DisCode & Botón NAV Responsivo -->
+      <a href="index.html" class="logo">DisCode</a>
+      <div class="menu-toggle"></div>
+
+      <!-- Menu de navegación -->
+      <nav>
+        <ul>
+          <li><a href="blog.html" class="btn_normal">Blog</a></li>
+          <li><a href="login.html" class="btn_login">Iniciar Sesión</a></li>
+          <li><a href="register.html" class="btn_register">Regístrarse</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <!--      MAIN      -->
+    <span class="material-icons">accessibility_new</span>
+    <main>
+      <h1 class="titulo">¿Necesitas Ayuda?</h1>
+
+      <div class="categorias" id="categorias">
+
+        <div class="categoria activa" data-categoria="faqs">
+          <span class="material-icons">help_outline</span>
+          <p class="categoria__titulo">F.A.Q.s</p>
+          <p class="categoria__parrafo">Soluciones rápidas</p>
+        </div>
+
+        <div class="categoria" data-categoria="interfaz">
+          <span class="material-icons">grid_view</span>
+          <p class="categoria__titulo">Interfaz de DisCode</p>
+          <p class="categoria__parrafo">¿Qué hace este botón?</p>
+        </div>
+
+        <div class="categoria" data-categoria="beginners">
+          <span class="material-icons">face</span>
+          <p class="categoria__titulo">¿Cómo Empezar?</p>
+          <p class="categoria__parrafo">
+            Comienza tu aprendizaje en línea de la manera correcta
+          </p>
+        </div>
+
+        <div class="categoria" data-categoria="extras">
+          <span class="material-icons">question_answer</span>
+          <p class="categoria__titulo">Atención al Cliente Personalizada</p>
+          <p class="categoria__parrafo">Contactanos a traves de Twitter</p>
+        </div>
+
+      </div>
+
+      <div class="preguntas">
+
+        <!--FAQS-->
+        <div class="contenedor__preguntas activo" data-categoria="faqs">
+          <div class="contenedor__pregunta">
+            <p class="pregunta">
+              Ejemplo de Pregunta 1<span class="material-icons">add</span>
+            </p>
+            <div class="respuesta">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                laboriosam sequi totam animi quasi neque doloribus, harum
+                nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                explicabo? Unde, nesciunt voluptatibus?
+              </p>
+              <img
+                src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="contenedor__pregunta">
+            <p class="pregunta">
+              Ejemplo de Pregunta 2<span class="material-icons">add</span>
+            </p>
+            <div class="respuesta">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                laboriosam sequi totam animi quasi neque doloribus, harum
+                nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                explicabo? Unde, nesciunt voluptatibus?
+              </p>
+              <img
+                src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--INTERFAZ-->
+        <div class="contenedor__preguntas" data-categoria="interfaz">
+          <div class="contenedor__pregunta">
+            <p class="pregunta">
+              Ejemplo de Pregunta 3<span class="material-icons">add</span>
+            </p>
+            <div class="respuesta">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                laboriosam sequi totam animi quasi neque doloribus, harum
+                nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                explicabo? Unde, nesciunt voluptatibus?
+              </p>
+              <img
+                src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="contenedor__pregunta">
+            <p class="pregunta">
+              Ejemplo de Pregunta 4<span class="material-icons">add</span>
+            </p>
+            <div class="respuesta">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                laboriosam sequi totam animi quasi neque doloribus, harum
+                nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                explicabo? Unde, nesciunt voluptatibus?
+              </p>
+              <img
+                src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--BEGINNERS-->
+        <div class="contenedor__preguntas" data-categoria="beginners">
+            <div class="contenedor__pregunta">
+              <p class="pregunta">
+                Ejemplo de Pregunta 5<span class="material-icons">add</span>
+              </p>
+              <div class="respuesta">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  laboriosam sequi totam animi quasi neque doloribus, harum
+                  nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                  explicabo? Unde, nesciunt voluptatibus?
+                </p>
+                <img
+                  src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                  alt=""
+                />
+              </div>
+            </div>
+  
+            <div class="contenedor__pregunta">
+              <p class="pregunta">
+                Ejemplo de Pregunta 6<span class="material-icons">add</span>
+              </p>
+              <div class="respuesta">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  laboriosam sequi totam animi quasi neque doloribus, harum
+                  nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                  explicabo? Unde, nesciunt voluptatibus?
+                </p>
+                <img
+                  src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                  alt=""
+                />
+              </div>
+            </div>
+        </div>
+
+
+        <!--BEGINNERS-->
+        <div class="contenedor__preguntas" data-categoria="extras">
+            <div class="contenedor__pregunta">
+              <p class="pregunta">
+                Ejemplo de Pregunta 7<span class="material-icons">add</span>
+              </p>
+              <div class="respuesta">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  laboriosam sequi totam animi quasi neque doloribus, harum
+                  nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                  explicabo? Unde, nesciunt voluptatibus?
+                </p>
+                <img
+                  src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                  alt=""
+                />
+              </div>
+            </div>
+  
+            <div class="contenedor__pregunta">
+              <p class="pregunta">
+                Ejemplo de Pregunta 8<span class="material-icons">add</span>
+              </p>
+              <div class="respuesta">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  laboriosam sequi totam animi quasi neque doloribus, harum
+                  nostrum esse rerum, atque odio fugiat dicta aperiam quaerat
+                  explicabo? Unde, nesciunt voluptatibus?
+                </p>
+                <img
+                  src="https://galaxytechsite.files.wordpress.com/2020/07/django-logo-negative.png"
+                  alt=""
+                />
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!--      FOOTER      -->
+    <footer>
+      <section class="Contenedor-Footer">
+        <div class="footer__logotipo">
+          <label for="DisCode" class="footer__logo"
+            ><a href="index.html">DisCode</a></label
+          >
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="faqs.html">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="footer__sm">
+          <ul>
+            <li>
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="footer__copyright">
+        <span>© SEES.WEBDEVELOPERS 2021</span>
+      </div>
+    </footer>
+
+    <!--      SCRIPTS      -->
+
+    <!--Contenedores ¿Necesitas Ayuda?-->
+    <script>
+        const categorias = document.querySelectorAll('#categorias .categoria');
+        const contenedorPreguntas = document.querySelectorAll('.contenedor__preguntas');
+
+        let categoriaActiva = null;
+
+        categorias.forEach((categoria) => {
+            categoria.addEventListener('click', (e) => {
+                categorias.forEach((elemento) => {
+                    elemento.classList.remove('activa');
+                })
+                e.currentTarget.classList.toggle('activa');
+                categoriaActiva = categoria.dataset.categoria;
+
+
+                // Activar Contenedor de Preguntas que corresponda
+                contenedorPreguntas.forEach((contenedor) => {
+                    if (contenedor.dataset.categoria === categoriaActiva){
+                        contenedor.classList.add('activo');
+                    } else {
+                        contenedor.classList.remove('activo');
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <!--Preguntas Frecuentes-->
+    <script>
+        const preguntas = document.querySelectorAll('.preguntas .contenedor__pregunta');
+
+        preguntas.forEach((pregunta) => {
+            pregunta.addEventListener('click', (e) => {
+                e.currentTarget.classList.toggle('activa');
+
+
+                const respuesta = pregunta.querySelector('.respuesta');
+                const alturaRealRespuesta = respuesta.scrollHeight;
+
+                if(!respuesta.style.maxHeight){
+                    // Si esta vacio el maxHeight entonces ponemos un valor.
+                    respuesta.style.maxHeight = alturaRealRespuesta + 'px';
+                } else{
+                    respuesta.style.maxHeight = null;
+                }
+
+                preguntas.forEach((elemento) => {
+                    // Solamente queremos ejecutar el codigo para 
+                    // las preguntas que no sea la pregunta a la que le dimos click
+                    if (pregunta !== elemento){
+                        elemento.classList.remove('activa');
+                        elemento.querySelector('.respuesta').style.maxHeight = null;
+                    }
+                });
+
+            });
+        });
+
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+
+      $(document).ready(function () {
+        $("header nav ul li a").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
